@@ -1,8 +1,8 @@
 'use strict';
 
 const request = require("request"),
-			cheerio = require("cheerio");
-let url = 'https://moikrug.ru/onerussel';
+      cheerio = require("cheerio");
+let url = 'https://moikrug.ru/onerussel'; // << URL goes here
 
 // An array with varying endings
 const monthForms = ['месяц', 'месяца', 'месяцев'];
