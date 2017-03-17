@@ -26,7 +26,7 @@ function calculatePeriod(text) {
 	const d = new Date();
 	const currentYear = d.getFullYear();
 	const begunInYear = parseInt(years.substr(0,4));
-	const endedInYear = parseInt(years.substr(4,8)); // if only one year specified, no worries, just gets as an empty string
+	const endedInYear = parseInt(years.substr(4,8)); // if only one year specified, no worries, just assigns as an empty string
 	const MONTHS = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь']
 	let period;
 
