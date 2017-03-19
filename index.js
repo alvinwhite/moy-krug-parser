@@ -1,9 +1,8 @@
 'use strict';
 
 const request = require("request"),
-			cheerio = require("cheerio");
+      cheerio = require("cheerio");
 let url = 'https://moikrug.ru/onerussel';
-
 // An array with varying endings
 const monthForms = ['месяц', 'месяца', 'месяцев'];
 const yearForms = ['год', 'года', 'лет'];
@@ -62,12 +61,10 @@ function calculatePeriod(text) {
 		period = endedInYear - begunInYear;
 		return period + ' ' + getEnding(period,yearForms);
 	}
-
 }
 
 // Function that does all the work :)
 function logData(url) {
-
 	request(url, function (error, response, html) {
 		if (!error) {
 			const $ = cheerio.load(html);
@@ -98,9 +95,7 @@ function logData(url) {
 		} else {
 			console.log("Произошла ошибка: " + error);
 		}
-
 	});
-
 }
 
 logData(url);
